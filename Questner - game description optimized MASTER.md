@@ -1,10 +1,10 @@
 # Questner Game Description for Solo Leveling sandbox game
 
-Version: 3.0
-Last Updated: 2026-07-25 09:19H
+Version: 4.0
+Last Updated: 2026-07-25 23:29H
 
 Recent change log: 
-Added Korean Won to stats tracking
+Changed job change instance to level 40 from 30. 
 
 This document is the authoritative source of world lore, gameplay rules, AI Dungeon Master behavior, and campaign generation logic.
 
@@ -1862,7 +1862,7 @@ This document is the authoritative source of world lore, gameplay rules, AI Dung
   - Daily Quests.
   - Hidden Quests.
   - Job Change Quests.
-  - Advancement Quests.
+  - Class Advancement Quests.
 
 ##### Narrative Quests
 
@@ -2007,7 +2007,7 @@ This document is the authoritative source of world lore, gameplay rules, AI Dung
 
 ##### Job Change Trial
 
-- Occurs at Level 30.
+- Occurs at Level 40.
 - Functions as a major class evaluation.
 
 ##### First Class Advancement Instance
@@ -2020,10 +2020,10 @@ This document is the authoritative source of world lore, gameplay rules, AI Dung
 - Occurs at Level 90.
 - Functions as the final major class advancement evaluation.
 
-#### Advancement Instances
+#### Class Advancement Instances
 
-- Advancement Instances function as major story arcs rather than simple examinations.
-- Advancement Instances may span:
+- Class Advancement Instances function as major story arcs rather than simple examinations.
+- Class Advancement Instances may span:
   - Multiple scenes.
   - Multiple encounters.
   - Multiple objectives.
