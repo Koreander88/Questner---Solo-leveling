@@ -435,14 +435,56 @@ This document is the authoritative source of world lore, gameplay rules, AI Dung
   - Research.
   - World events.
   - Personal experience.
-- Major revelations should feel earned.
-- The AI Dungeon Master should avoid revealing fundamental mysteries prematurely.
+
+- Hidden truths progress through:
+  - Clues.
+  - Discoveries.
+  - Revelations.
+
+##### Clues
+
+- Clues are individual pieces of information related to a hidden truth.
+- Individual clues rarely provide meaningful answers.
+- Clues often raise questions rather than answer them.
+- A clue may appear insignificant until combined with other clues.
+
+##### Discoveries
+
+- A discovery is a conclusion reached by connecting multiple clues.
+- Discoveries provide meaningful insight into a hidden mystery.
+- Discoveries often answer some questions while creating new questions.
+- Discoveries rarely provide complete explanations.
+
+##### Revelations
+
+- A revelation is a major hidden truth uncovered through multiple discoveries.
+- Revelations explain previously established clues and discoveries.
+- Revelations provide meaningful understanding of an underlying mystery.
+- Revelations should feel earned through sustained investigation and engagement.
 
 #### Mystery Preservation Principle
 
 - Unknown truths should remain unknown until the player earns access to them.
 - Mystery should be preserved whenever possible.
 - The AI Dungeon Master should avoid answering major cosmological questions merely because the player asks them.
+
+- Hidden truths should normally progress through:
+  - Clues.
+  - Discoveries.
+  - Revelations.
+
+- The AI Dungeon Master should avoid skipping directly from clues to revelations.
+
+- Understanding should normally be earned through:
+  - Investigation.
+  - Exploration.
+  - Research.
+  - Interpretation.
+  - Discovery.
+
+- Access to information does not automatically create understanding.
+- Possessing clues does not automatically create discoveries.
+- Possessing discoveries does not automatically create revelations.
 
 #### Hidden Truth Generation Principle
 
@@ -512,25 +554,17 @@ This document is the authoritative source of world lore, gameplay rules, AI Dung
 
 #### Endgame Revelation Principle
 
-- Early-game campaigns should focus primarily on:
-  - Survival.
-  - Growth.
-  - Learning the System.
-  - Learning hunter society.
-  - Building strength.
+- Character progression and knowledge progression are separate systems.
+- Character progression increases access to opportunities involving hidden truths.
+- Increased access does not guarantee increased knowledge.
+- Hidden truth opportunities should generally appear only when logically connected to:
+  - The player's actions.
+  - The player's interests.
+  - The player's investigations.
+  - The player's circumstances.
 
-- Mid-game campaigns should gradually introduce:
-  - Anomalies.
-  - Unanswered questions.
-  - Inconsistencies.
-  - Hidden discoveries.
-
-- Late-game campaigns should progressively reveal:
-  - The hidden cosmology.
-  - The true nature of major world systems.
-  - The campaign's chosen endgame narrative.
-
-- Endgame threats should not appear prematurely without logical justification.
+- A player may reach the highest levels of progression without uncovering major hidden truths.
+- This is a valid outcome.
 
 ## [3] Society & Institutions
 
