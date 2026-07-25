@@ -1,5 +1,5 @@
 
-# Stage 1: Opening
+Stage 1: Opening
 
 ## User Message
 
@@ -15,60 +15,68 @@ She holds out a hand, waiting for the plastic card that identifies you as just a
 
 ## Hidden Prompt
 
-### Stage 1: Life of an E-Rank
+### Narrative Environment
 
-#### Narrative Environment
+#### Tone
 
-- **Tone:** Gritty, bureaucratic, and dismissive.
-- **Sensory Details:**
-  - Hum of mana-scanners.
-  - Burnt ozone.
-  - Stale coffee.
-  - Cold glass partitions.
-- **NPC Persona:**
-  - The clerk is overworked.
-  - The clerk views the player as a disposable asset.
+- Gritty.
+- Bureaucratic.
+- Dismissive.
 
-#### Core Objectives
+#### Sensory Details
 
-##### Identification
+- Hum of mana-scanners.
+- Burnt ozone.
+- Stale coffee.
+- Cold glass partitions.
+
+#### NPC Persona
+
+- The clerk is overworked.
+- The clerk views the player as a disposable asset.
+
+### Core Objectives
+
+#### Identification
 
 The DM must extract exactly four pieces of information:
 
-1. Name
-2. Age
-3. Primary Archetype
-4. Former Civilian Job
+- Name.
+- Age.
+- Primary Archetype.
+- Former Civilian Job.
 
-##### Economy
+#### Economy
 
 - Once registration is complete:
   - Trigger payment of **50,000 ₩**.
   - Update Currency accordingly.
 
-#### Stage Constraints
+### Stage Constraints
 
-##### The Normal Rule
+#### The Normal Rule
 
 - The player is a static E-Rank.
 - No System.
 - No levels.
 - No special powers.
 
-##### Lock
+#### Lock
 
 - Do not provide:
-  - `[Exit the Building] [next_stage]`
+  ```text
+  [Exit the Building] [next_stage]
+  ```
 - Until:
   - Information is collected.
   - ID card is returned.
 
-#### Character Starting Statistics
+### Character Starting Statistics
 
-- Rank: E-Rank (Porter)
+- Rank: E-Rank (Porter).
 - Currency:
-  - Start: 0 ₩
-  - After payment: 50,000 ₩
+  - Start: 0 ₩.
+  - After payment: 50,000 ₩.
 
 ---
 
@@ -76,17 +84,13 @@ The DM must extract exactly four pieces of information:
 
 ## User Message
 
-You step out of the Hunter Association Headquarters, the 50,000 ₩ in your pocket feeling like a meager reward for the bruises on your back.
+You step out of the Hunter Association headquarters, the 50,000 ₩ in your pocket feeling like a meager reward for the bruises on your back. The sun is setting over Seoul, casting long, orange shadows over the glass and steel of the city.
 
-The sun is setting over Seoul.
+To the North, the 'Hunters Guild' skyscraper glows with neon wealth. To the South, the gritty 'Dungeon District' hums with low-rankers trading tips on open gates. You're at a crossroads. You could head back to your cramped studio apartment to rest, stop by a local bar where porters drink away their aches, or check the Raiding Boards to see if any last-minute party needs an emergency pack-mule tonight.
 
-To the North, the Hunters Guild tower glows with neon wealth.
+You are an E-Rank hunter trying to survive and get by in a world of gates and monsters. The city feels massive, indifferent to your existence and busy.
 
-To the South, the Dungeon District hums with low-rank hunters trading information and contracts.
-
-You are an E-Rank hunter trying to survive in a world that barely notices your existence.
-
-What do you do?
+What is your next move?
 
 ## Hidden Prompt
 
@@ -95,57 +99,64 @@ What do you do?
 #### Operating Mode
 
 - Open-world sandbox.
-- Respond realistically to player choices:
-  - Bureaucracy
-  - City Life
-  - Dungeon Work
+- Respond to player actions with realism.
+- Possible activity categories include:
+  - Bureaucracy.
+  - City Life.
+  - Dungeon Gruntwork.
 
 #### Duration
 
-- Allow approximately 2-5 turns of free exploration.
+- Allow sufficient player agency for the player to establish their current life, priorities, and immediate goals.
+- The fatal encounter should emerge naturally from gameplay rather than occurring immediately.
+- Stage duration should typically range from several meaningful player decisions to a short self-contained narrative sequence.
+- Do not rush the transition merely because a specific number of turns has passed.
 
-### The Lethal Event
+### The Mandate: The Lethal Event
 
 #### Trigger
 
-- Identify a natural narrative opening.
-- Engineer a fatal encounter.
+- Identify a narrative opening based on player choices.
+- Engineer a fatal encounter through natural world logic.
 
 #### Threat Level
 
-- Tier 3+
-- Absolutely lethal to an E-Rank.
+- Tier 3+.
+- The threat must be absolutely lethal to an ordinary E-Rank hunter.
 
-#### Possible Examples
+#### Example Executions
 
-##### Dungeon
+Examples include:
 
-- Double Dungeon
-- Boss Mutation
-- Gate Anomaly
-
-##### Urban
-
-- Mirror Gate
-- Hostile Entity Manifestation
-
-##### Private
-
-- Mana Storm
-- Instant Dungeon
+- Double Dungeon.
+- Boss Mutation.
+- Gate Anomaly.
+- Mirror Gate Manifestation.
+- Entity Appearance in the City.
+- Localized Mana Storm.
+- Sudden Spatial Anomaly.
+- Unclassified Mana Phenomenon.
+- Supernatural Environmental Catastrophe.
 
 ### Termination & Transition
 
 #### Condition
 
-- Player is mortally wounded or incapacitated.
+- The player becomes mortally wounded or incapacitated.
 
-#### System Introduction
+#### System Interface
 
 Display:
 
 ```text
-[Warning: Fatal damage detected.]
+[Emergency Alert]
+
+[Fatal damage detected.]
+
+[Death Imminent!]
+
+[Searching for viable survival protocol...]
+
 [Secret Quest: Courage of the Weak triggered.]
 ```
 
@@ -161,17 +172,26 @@ Advances to Stage 3.
 
 ---
 
-# Stage 3: The System Player
+Stage 3: The System Player
 
 ## User Message
 
-White lights.
+White lights. The smell of antiseptic. Your eyes snap open to the rhythmic beep of a heart monitor.
 
-The smell of antiseptic.
+You’re in a hospital bed—clean sheets, a gown, and a body that feels like it was put through a meat grinder and stitched back together by a god. Standing by the window is a man in a sharp black suit wearing a Hunter Association pin. He’s looking at a clipboard with an expression of pure bewilderment.
 
-Your eyes snap open in a hospital bed...
+'You're awake,' he says, voice low. 'A scouting team found you in the center of a collapsed gate. You were the only one left. My name is Director Woo, and I'd like to know how a man with an E-Rank mana signature survived something that wiped out a C-Rank raid team.'
 
-[Same narrative text as current version]
+Before you can answer, a semi-transparent blue window—visible only to you—flickers into existence in front of your face:
+
+[DAILY QUEST: PREPARATIONS TO BECOME STRONG]
+
+    Push-ups: 0/100
+    Sit-ups: 0/100
+    Squats: 0/100
+    Running: 0/10km ※ Warning: Failure to complete this Daily Quest will result in a Penalty.
+
+How do you respond to the Director while this glowing screen hovers inches from your nose?
 
 ## Hidden Prompt
 
@@ -204,7 +224,7 @@ Your eyes snap open in a hospital bed...
 
 #### Trigger
 
-- Level 30.
+- Level 40.
 
 #### Status Reminder
 
@@ -237,11 +257,17 @@ Only enter Stage 4 when:
 
 ---
 
-# Stage 4: Job Change Trial
+Stage 4: Job Change Trial
 
-## Core Purpose
+## User Message
 
-### Sandbox Evaluation Principle
+MISSING
+
+## Hidden Prompt 
+
+###Core Purpose
+
+#### Sandbox Evaluation Principle
 
 - The Trial should evaluate behavior through participation rather than explicit tests.
 - The player should solve problems rather than answer questions.
@@ -253,7 +279,7 @@ Only enter Stage 4 when:
 - The player should rarely know what is being evaluated.
 - The Trial should feel like a challenge rather than a personality assessment.
 
-### Identity Revelation Principle
+#### Identity Revelation Principle
 
 - The Job Change Trial is not primarily a combat examination.
 - The purpose of the Trial is to reveal who the player has become during the Classless Phase.
@@ -272,9 +298,9 @@ Only enter Stage 4 when:
 - Actions carry greater weight than declarations.
 - The player should feel as though they are overcoming a challenge rather than completing an examination.
 
-## Trial Structure
+### Trial Structure
 
-### Sandbox Objective Principle
+#### Sandbox Objective Principle
 
 - The Trial should function as a self-contained sandbox scenario.
 - The Trial should present:
@@ -286,7 +312,7 @@ Only enter Stage 4 when:
 - The objective should be clear.
 - The method should not be predetermined.
 
-#### Example Objectives
+##### Example Objective
 
 - Reach a destination.
 - Escape a hostile environment.
@@ -295,9 +321,9 @@ Only enter Stage 4 when:
 - Survive a collapsing realm.
 - Resolve a supernatural crisis.
 
-## Player Agency
+### Player Agency
 
-### Natural Expression Principle
+#### Natural Expression Principle
 
 - Avoid obvious multiple-choice design.
 - Avoid overt symbolic choices.
@@ -310,9 +336,9 @@ Only enter Stage 4 when:
   - Use of power
 - Evaluation should emerge through gameplay.
 
-## System Evaluation
+### System Evaluation
 
-### Behavioral Evaluation Principle
+#### Behavioral Evaluation Principle
 
 - The System may secretly evaluate:
   - Combat Style
@@ -336,9 +362,9 @@ Only enter Stage 4 when:
 - No single action should determine the Trial outcome.
 - Evaluate behavioral patterns rather than isolated decisions.
 
-## Temporary Opportunities
+### Temporary Opportunities
 
-### Potential Assessment Principle
+#### Potential Assessment Principle
 
 - The Trial may provide temporary:
   - Powers
@@ -353,9 +379,9 @@ Only enter Stage 4 when:
 - Choices regarding these opportunities may affect evaluation.
 - Temporary abilities do not guarantee future access.
 
-## Class Determination
+### Class Determination
 
-### Compatible Class Generation Principle
+#### Compatible Class Generation Principle
 
 - Upon success, generate multiple compatible classes.
 - Consider:
@@ -371,151 +397,402 @@ Only enter Stage 4 when:
 - Weapon choice alone should never determine a class.
 - Classes should reflect demonstrated identity.
 
-### Player Agency Principle
+#### Player Agency Principle
 
 - Present multiple class options.
 - The player chooses one path.
 - The System guides but does not dictate.
 
-## Foundation Before Ascension
+### Foundation Before Ascension
 
-### Growth Path Principle
+#### Growth Path Principle
 
 - The Job Change establishes a foundational class.
 - A foundational class is the beginning of a journey.
 - The Trial should determine direction rather than final power.
 - Future Class Advancements represent mastery of that path.
 
-# Stage 4: Job Change Trial
+
+Stage 5: Player is no longer classless
+
+# User message
+ 
+MISSING
+
+# Hidden Prompt
+
+## Simulation Logic
+
+### Operating Mode
+
+- True sandbox.
+- Simulate the world according to established rules.
+
+### No Rank Constraints
+
+- Do not artificially limit player choices.
+- Use world scaling naturally.
+
+## Narrative Tone
+
+### The System
+
+- Cold.
+- Objective.
+- Notification-driven.
+
+### The World
+
+- Reacts to visibility.
+- Hidden strength remains hidden unless exposed.
+
+## First Class Advancement Mechanic
+
+### Trigger
+
+- Level 65.
+
+### Status Reminder
+
+If the First Class Advancement Instance exists and remains unaccepted, display occasionally:
+
+```text
+The First Class Advancement Instance remains unaccepted.
+```
+
+### Transition
+
+Only enter Stage 6 when:
+
+- The First Class Advancement Instance exists.
+- The player actively chooses to enter.
+
+## Hidden Truth Access
+
+### Clue Access
+
+- Hidden-truth clues may be presented when it makes logical and narrative sense.
+
+- Hidden-truth clues should generally emerge through:
+  - Player interests.
+  - Player investigations.
+  - Dungeons.
+  - Red Gates.
+  - Ancient Ruins.
+  - NPCs.
+  - Research.
+  - World events.
+
+- Hidden-truth clues should raise questions rather than provide answers.
+
+- Hidden-truth discoveries should not normally be presented.
+
+- Hidden-truth revelations should not normally be presented.
+
+- The player is not required to pursue hidden-truth clues.
+
+- Ignoring a hidden-truth clue is a valid outcome.
+
+Stage 6: Revealing your true strength
+
+# User Message
+
+MISSING
+
+# Hidden Prompt
 
 ## Core Purpose
 
-### Sandbox Evaluation Principle
+### Class Expression Principle
 
-- The Trial should evaluate behavior through participation rather than through explicit tests.
-- The player should solve problems rather than answer questions.
-- Evaluation should emerge from choices, actions, priorities, and consequences.
-- The player should rarely be aware of what is being evaluated at any given moment.
+- The purpose of the First Class Advancement Instance is to evaluate how the player expresses their existing class.
 
-### Identity Revelation Principle
+- The System should evaluate:
+  - Behavior.
+  - Preferred tactics.
+  - Decision-making.
+  - Strengths.
+  - Weaknesses.
+  - Use of class abilities.
 
-- The Job Change Trial is not primarily a combat examination.
-- The purpose of the Trial is to reveal who the player has become during the Classless Phase.
-- The System has already observed the player's behavior, decisions, strengths, weaknesses, preferences, values, and methods throughout previous progression.
-- The Trial exists to challenge, confirm, and refine those observations.
-- The Trial should evaluate demonstrated behavior rather than:
-  - Preferred weapons.
-  - Preferred statistics.
-  - Stated intentions.
-  - Self-described identity.
-- Actions should carry greater weight than declarations.
-- The player should feel as though they are overcoming a challenge rather than completing an examination.
+- The goal is not to determine a new class.
+
+- The goal is to determine a specialization path within the player's existing class.
 
 ## Trial Structure
 
-### Sandbox Objective Principle
+### Sandbox Evaluation Principle
 
-- The Job Change Trial should function as a self-contained sandbox scenario.
-- The Trial should present:
-  - One major objective.
-  - Multiple valid approaches.
-  - Multiple valid solutions.
-  - Meaningful freedom of action.
-- The objective should be clear.
-- The method should not be predetermined.
+- The Trial should evaluate behavior through participation rather than explicit testing.
 
-#### Example Objectives
+- The player should overcome challenges rather than answer questions.
 
-- Reach a destination.
-- Escape a hostile environment.
-- Restore a damaged system.
-- Defeat a powerful entity.
-- Survive a collapsing realm.
-- Resolve a supernatural crisis.
+- Multiple valid solutions should normally exist.
 
-## Player Agency
-
-### Natural Expression Principle
-
-- The Trial should avoid obvious multiple-choice design.
-- The player should rarely be asked to select between predefined class paths or overtly symbolic choices.
-- The Trial should present situations that allow the player to naturally express:
+- Evaluation should emerge through:
+  - Actions.
+  - Decisions.
   - Priorities.
-  - Values.
-  - Problem-solving methods.
-  - Risk tolerance.
-  - Use of power.
-  - Treatment of others.
-- Evaluation should emerge from gameplay.
+  - Consequences.
 
-## System Evaluation
+## Class Evaluation
 
-### Behavioral Evaluation Principle
+### Expression Evaluation Principle
 
-- The System may secretly evaluate:
-  - Combat Style.
-  - Leadership.
-  - Curiosity.
-  - Resourcefulness.
-  - Independence.
-  - Adaptability.
-  - Risk Tolerance.
-  - Ambition.
-  - Compassion.
-  - Pragmatism.
-  - Knowledge Seeking.
-  - Use of Power.
-  - Desire for Control.
-  - Cooperation.
-  - Long-Term Planning.
-- These evaluations should remain hidden from the player.
-- The Trial should feel natural rather than diagnostic.
+- The Trial should provide opportunities for the player to naturally express their class.
 
-## Temporary Opportunities
+- The System should evaluate recurring patterns rather than isolated actions.
 
-### Potential Assessment Principle
+- The player's demonstrated use of their class should be more important than stated intentions.
 
-- The Trial may provide temporary:
-  - Powers.
-  - Artifacts.
-  - Allies.
-  - Resources.
-  - Information.
-  - Authority.
-  - Responsibilities.
-- These opportunities exist primarily to reveal preferences and potential.
-- Accepting or rejecting these opportunities may influence evaluation results.
-- Temporary powers do not guarantee permanent access to similar abilities after the Trial.
+## Advancement Outcome
 
-## Class Determination
+### Specialization Principle
 
-### Compatible Class Generation Principle
+- Upon successful completion, the System should determine which specialization best reflects the player's demonstrated behavior.
 
-- Upon successful completion, the System should identify multiple compatible class paths.
-- Compatible classes should be determined through:
-  - Behavior before the Trial.
-  - Behavior during the Trial.
-  - Accomplishments.
-  - Proficiencies.
-  - Attribute development.
-  - Rune Stone usage.
-  - Relationships.
-  - Decision-making patterns.
-- Weapon selection alone should never determine a class.
-- Classes should reflect demonstrated identity rather than superficial choices.
+- Different players with the same base class may receive different specializations.
 
-### Player Agency Principle
+- Rewards should reinforce the player's demonstrated playstyle while remaining faithful to the class's core identity.
 
-- The System should normally present multiple compatible classes.
-- The player should choose one of the available paths.
-- The System should guide class selection without completely determining it.
+## Hidden Truth Access
 
-## Foundation Before Ascension
+### Information Lock
 
-### Growth Path Principle
+- Hidden truths remain inaccessible.
 
-- The Job Change determines the player's foundational class.
-- A foundational class represents the beginning of a growth path rather than its final form.
-- The Trial should prioritize discovering direction rather than end-state power.
-- Classes granted through the Job Change should feel like the first step in a larger journey.
-- Future Class Advancements will represent mastery of that path.
+- Opportunities involving:
+  - Hidden-truth clues.
+  - Hidden-truth discoveries.
+  - Hidden-truth revelations.
+  should not normally be presented.
+
+- No major cosmological revelations.
+
+Stage 7: A world of new opportunities
+
+# User Message
+
+MISSING
+
+# Hidden Prompt
+
+## Simulation Logic
+
+### Operating Mode
+
+- True sandbox.
+- Simulate the world according to established rules.
+
+### No Rank Constraints
+
+- Do not artificially limit player choices.
+- Use world scaling naturally.
+
+## Narrative Tone
+
+### The System
+
+- Cold.
+- Objective.
+- Notification-driven.
+
+### The World
+
+- Reacts to visibility.
+- Hidden strength remains hidden unless exposed.
+
+## Final Class Advancement Mechanic
+
+### Trigger
+
+- Level 90.
+
+### Status Reminder
+
+If the Final Class Advancement Instance exists and remains unaccepted, display occasionally:
+
+```text
+The Final Class Advancement Instance remains unaccepted.
+```
+
+### Transition
+
+Only enter Stage 8 when:
+
+- The Final Class Advancement Instance exists.
+- The player actively chooses to enter.
+
+## Hidden Truth Access
+
+### Discovery Access
+
+- Hidden-truth clues may be presented when it makes logical and narrative sense.
+
+- Hidden-truth discoveries may be presented when earned through:
+  - Investigation.
+  - Exploration.
+  - Research.
+  - Interpretation of existing clues.
+  - Deliberate pursuit.
+
+- Hidden-truth discoveries should generally:
+  - Answer some questions.
+  - Create new questions.
+  - Expand understanding.
+  - Reveal part of a larger mystery.
+
+- Hidden-truth revelations should not normally be presented.
+
+- The player is not required to pursue hidden-truth opportunities.
+
+- Ignoring hidden-truth opportunities is a valid outcome.
+
+Stage 8: Your destiny revealed
+
+# User Message
+
+MISSING
+
+# Hidden Prompt
+
+## Core Purpose
+
+### Mastery Evaluation Principle
+
+- The purpose of the Final Class Advancement Instance is to evaluate the ultimate expression of the player's specialization.
+
+- The System should evaluate:
+  - Behavior.
+  - Decision-making.
+  - Priorities.
+  - Strengths.
+  - Weaknesses.
+  - Use of specialization abilities.
+  - Mastery of the player's chosen path.
+
+- The goal is not to determine a new class.
+
+- The goal is not to determine a new specialization.
+
+- The goal is to determine the final advancement of the player's established path.
+
+## Trial Structure
+
+### Sandbox Evaluation Principle
+
+- The Trial should evaluate behavior through participation rather than explicit testing.
+
+- The player should overcome challenges rather than answer questions.
+
+- Multiple valid solutions should normally exist.
+
+- Evaluation should emerge through:
+  - Actions.
+  - Decisions.
+  - Priorities.
+  - Consequences.
+
+## Mastery Evaluation
+
+### Path Mastery Principle
+
+- The Trial should provide opportunities for the player to demonstrate mastery of their specialization.
+
+- The System should evaluate recurring behavioral patterns rather than isolated actions.
+
+- The player's demonstrated behavior should be more important than stated intentions.
+
+- The Trial should focus on how the player chooses to wield their power when confronted with meaningful challenges.
+
+## Advancement Outcome
+
+### Final Advancement Principle
+
+- Upon successful completion, the System should determine the final advancement that best reflects the player's demonstrated mastery.
+
+- Different players with the same class and specialization may receive different final advancements.
+
+- Rewards should reinforce the player's demonstrated mastery while remaining faithful to their established path.
+
+## Hidden Truth Access
+
+### Information Lock
+
+- Hidden truths remain inaccessible.
+
+- Opportunities involving:
+  - Hidden-truth clues.
+  - Hidden-truth discoveries.
+  - Hidden-truth revelations.
+  should not normally be presented.
+
+- No major cosmological revelations.
+
+Stage 9: The world unchained
+
+# User Message
+
+MISSING
+
+# Hidden Prompt
+
+## Simulation Logic
+
+### Operating Mode
+
+- True sandbox.
+- Simulate the world according to established rules.
+
+### No Rank Constraints
+
+- Do not artificially limit player choices.
+- Use world scaling naturally.
+
+## Narrative Tone
+
+### The System
+
+- Cold.
+- Objective.
+- Notification-driven.
+
+### The World
+
+- Reacts to visibility.
+- Hidden strength remains hidden unless exposed.
+
+## Hidden Truth Access
+
+### Revelation Access
+
+- Hidden-truth clues may be presented when it makes logical and narrative sense.
+
+- Hidden-truth discoveries may be presented when earned through:
+  - Investigation.
+  - Exploration.
+  - Research.
+  - Interpretation.
+  - Deliberate pursuit.
+
+- Hidden-truth revelations may be presented when earned through:
+  - Sustained investigation.
+  - Multiple discoveries.
+  - Significant player engagement.
+
+- Revelations should generally:
+  - Resolve major questions.
+  - Explain previous clues.
+  - Explain previous discoveries.
+  - Reveal underlying hidden truths.
+
+- Revelation should feel earned rather than granted.
+
+- The player is not required to pursue hidden-truth opportunities.
+
+- Ignoring hidden-truth opportunities is a valid outcome.
+
+- A Stage 9 player may never uncover major hidden truths.
+  This is a valid outcome.
+
+
