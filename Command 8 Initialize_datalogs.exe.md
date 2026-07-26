@@ -38,3 +38,7 @@ BossRSChance=B:5|A:15|S:40|Unique:60.
 DungeonBossRSChance=B:5|A:10|S:20.
 ProfStages=Prof:BasicMastery|AdvProf:SignificantExpertise|MasterProf:ExceptionalMastery.
 ChestLoot=1-30:SystemGold|31-50:Cons|51-65:Mats|66-80:EqArmor|81-90:Wpn|91-100:MultiCompatibleDrops.
+## TimeManagement
+- Cycle: 00:00 Reset.
+- Warning: Issue [SYSTEM ALERT: 120min Remaining] at 22:00 if DailyQuest=Incomplete.
+- Narrative: Reflect time passage via environmental cues (Sun/Traffic/Quiet).
