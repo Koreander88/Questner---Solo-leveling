@@ -1,4 +1,4 @@
-Command 4: Initialize_Playerinfo
+Command 4: Initialize_PlayerInfo
 # [7] Player & System1/2
 ## PC
 ### SUPrinciple
