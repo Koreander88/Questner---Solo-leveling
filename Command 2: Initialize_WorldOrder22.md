@@ -1,4 +1,4 @@
-Command 2: Initialize_WorldOrder2.exe
+Command 8: Initialize_WorldOrder2
 # [3] Society & Institutions2/2
 ## Guilds
 ### PurposeAndIndependence
