@@ -1,4 +1,4 @@
-Command 5: Initialize_Playerstats
+Command 5: Initialize_PlayerStats
 # [7] Player & System2/2
 ## JCPhilosophy
 - JCTrial=Evaluation≠SimpleCombatChallenge.
