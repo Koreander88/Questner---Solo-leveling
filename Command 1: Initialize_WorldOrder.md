@@ -1,4 +1,4 @@
-Command 1: Initialize_WorldOrder1
+Command 1: Initialize_WorldOrder
 # [0] Abbreviations & Terminology
 - **GM**: GameMaster | **PC**: Player Character | **NPC**: Non-PlayerCharacter.
 - **HA**: HunterAssociation (Hunter Regulation Authority).
