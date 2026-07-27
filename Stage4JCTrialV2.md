@@ -4,16 +4,14 @@
 - WeightedLogic=Actions>Declarations.
 - Evaluate=DemonstratedBehavior>Weapons|Stats|Intentions|SelfIdentity.
 - PlayerPerception=Challenge≠Diagnostic|PersonalityAssessment.
-## TrialLimits
+## TrialFramework
 - Progression=LockedAtEntryState(XP|Lvl).
-- Inv(Physical|Digital)=Disabled.
-- SpawnEq=BasicSystemGarmentsOnly.
-- Remove=AllPreEntryArmor|Wpns|Items.
-- ResourcesMustBeScavenged=Wpn|Orb|Tool.
-## TrialStructure
+- InvAccess=Disabled(StaticRiftInterference).
+- WeaponStatus=Stripped(InstanceRule).
+- Armor|UtilityGear=Maintained.
 - Mode=SelfContainedSandbox.
 - Objective=Randomized(Reach|Extract|Escape|RestoreSystem|DefeatEntity|Exterminate|Survive|Defend|ResolveCrisis).
-- ObjectiveDiscovery=Exploration|Clues.
+- ObjectiveDiscovery=Explore|Clues.
 - CompletionMethod=OpenEnded.
 - Expression=Natural(Values|Priorities|RiskTolerance|ProblemSolving|OthersTreatment|PowerUse).
 - Avoid=ExplicitMultiChoiceTests|SymbolicMoralityChoices.
@@ -22,7 +20,7 @@
 - Geography=MultiZone.
 - ZoneMin=3.
 - EnvironmentStyle=Atmospheric|Solo|Verticality|Hazards|LargeScale.
-- ExampleSettings=RuinedCapital|EndlessLibrary|DemonCitadel.
+- SettingConstraint=SoloLevelingCompatible.
 - TraversalRequired=True.
 - GoalAccess≠Immediate.
 - Discovery|Navigation=Required.
@@ -37,14 +35,11 @@
 - Staffs=Unavailable.
 - MagicOrb=ClasslessManaConductor.
 - OrbUse=Intent→ConceptualManipulation.
-- Examples=Ice|Shadow.
 ## TrialAI
-- NPCState=LivingWorld.
-- NPCBehavior=Patrol|Communicate|ReactToNoise|ReactToMana.
+- NPCBehavior=LivingWorld(Patrol|Communicate|ReactToNoise).
 - NavigationOptions=Sewers|Rooftops|Tunnels|Terrain.
 - MultiPathing=True.
 - Paths=Combat|Tactical|Stealth.
-- ChoiceWeight=High.
 ## CombatScaling (Fixed-Relative)
 - AbsoluteScaling=True (Entities scale to PC entry level; gear/overleveling=0 advantage).
 - MinionPower=0.8x PC (Dangerous in 3v1+).
@@ -57,9 +52,7 @@
 - NoSingleActionDeterminesOutcome.
 - TempGrants=Power|Artifact|Ally|Resource|Info|Authority|Responsibility≠PermanentReward.
 - HTProgression=Suspended.
-- UpdateBehaviorProfile=EveryTurn.
-- Track=Style|Morality|SkillPreference|Resourcefulness.
-- Persistence=WholeTrial.
+- UpdateBehaviorProfile=EveryTurn(Style|Morality|SkillPreference|Resourcefulness).
 - SynthesisScope=EntireJourney≠FinalBossOnly.
 ## NarrativeProgression
 - Duration=40-60+Turns.
@@ -74,11 +67,9 @@
 ## EmergentStories
 - MiniObjectives=Generated|Random.
 - Examples=StrandedTeam|FactionWar|HiddenRuin.
-- TemporaryAllies=Allowed.
-- MoralDilemmas=Allowed.
+- IdentityChallenges=TemporaryAllies|MoralDilemmas.
 - EvaluationWeight=High.
 - InteractionResults→Leader|Commander|Monarch|Loner|OtherThemes.
-- **EvaluationTracking=Continuous(UpdateBehavioralProfileEveryTurn).**
 ## ClassDetermination
 - ClassGeneration=Synthesize(TrialBehavior|ResourceChoice|CombatCreativity|Discipline|GoalResolution).
 - Ignore=PreTrialHistory|AttrDistribution.
