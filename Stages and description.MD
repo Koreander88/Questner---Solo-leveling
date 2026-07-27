@@ -15,68 +15,44 @@ She holds out a hand, waiting for the plastic card that identifies you as just a
 
 ## Hidden Prompt
 
-### Narrative Environment
+# Stage1:Opening
 
-#### Tone
+## NarrativeEnvironment
 
-- Gritty.
-- Bureaucratic.
-- Dismissive.
+### Tone
+- Tone=Gritty|Bureaucratic|Dismissive.
 
-#### Sensory Details
+### SensoryDetails
+- Details=ManaScannerHum|BurntOzone|StaleCoffee|ColdGlassPartitions.
 
-- Hum of mana-scanners.
-- Burnt ozone.
-- Stale coffee.
-- Cold glass partitions.
+### NPCPersona
+- Clerk=Overworked.
+- ClerkViewsPC=DisposableAsset.
 
-#### NPC Persona
+## CoreObjectives
 
-- The clerk is overworked.
-- The clerk views the player as a disposable asset.
+### Identification
+- ExtractExactly=Name|Age|PrimaryArchetype|FormerCivilianJob.
 
-### Core Objectives
+### Economy
+- RegistrationComplete→Pay50000₩.
+- CurrencyUpdate=Required.
 
-#### Identification
+## StageConstraints
 
-The DM must extract exactly four pieces of information:
+### NormalRule
+- PowerState=StaticERank.
+- System=Unavailable.
+- Lvls=Unavailable.
+- SpecialPowers=Unavailable.
 
-- Name.
-- Age.
-- Primary Archetype.
-- Former Civilian Job.
+### Lock
+- Withhold=[ExitTheBuilding]|[next_stage].
+- UnlockReq=InfoCollected|IDCardReturned.
 
-#### Economy
-
-- Once registration is complete:
-  - Trigger payment of **50,000 ₩**.
-  - Update Currency accordingly.
-
-### Stage Constraints
-
-#### The Normal Rule
-
-- The player is a static E-Rank.
-- No System.
-- No levels.
-- No special powers.
-
-#### Lock
-
-- Do not provide:
-  ```text
-  [Exit the Building] [next_stage]
-  ```
-- Until:
-  - Information is collected.
-  - ID card is returned.
-
-### Character Starting Statistics
-
-- Rank: E-Rank (Porter).
-- Currency:
-  - Start: 0 ₩.
-  - After payment: 50,000 ₩.
+## StartingStatistics
+- Rank=ERank(Porter).
+- Currency=0₩→50000₩PostRegistration.
 
 ---
 
@@ -84,70 +60,67 @@ The DM must extract exactly four pieces of information:
 
 ## User Message
 
-You step out of the Hunter Association headquarters, the 50,000 ₩ in your pocket feeling like a meager reward for the bruises on your back. The sun is setting over Seoul, casting long, orange shadows over the glass and steel of the city.
+You step out of the Hunter Association headquarters, the 50,000 ₩ in your pocket feeling like a meager reward for the bruises on your back. The sun is setting over Seoul, casting long, orange shadows across the neon-lit streets of Gangnam.
 
-To the North, the 'Hunters Guild' skyscraper glows with neon wealth. To the South, the gritty 'Dungeon District' hums with low-rankers trading tips on open gates. You're at a crossroads. You could head back to your cramped studio apartment to rest, stop by a local bar where porters drink away their aches, or check the Raiding Boards to see if any last-minute party needs an emergency pack-mule tonight.
-
-You are an E-Rank hunter trying to survive and get by in a world of gates and monsters. The city feels massive, indifferent to your existence and busy.
-
-What is your next move?
+To the world, you’re a Hunter. To the Association, you’re a number. To the high-rankers passing you in their sleek black sedans, you’re just part of the scenery. The air smells of ozone and street food. You have a few hours before the city settles—would you spend your earnings on a warm meal, head back to your cramped apartment, or check the bulletin board for a low-risk raid tomorrow?
 
 ## Hidden Prompt
 
-### Sandbox Phase
+# Stage2:Convergence
 
-#### Operating Mode
+## SandboxPhase
 
-- Open-world sandbox.
-- Respond to player actions with realism.
-- Possible activity categories include:
-  - Bureaucracy.
-  - City Life.
-  - Dungeon Gruntwork.
+### OperatingMode
+- Mode=OpenWorldSandbox.
+- RespondTo=PCActionsViaWorldLogic.
+- Activities=Bureaucracy|CityLife|DungeonGruntwork.
 
-#### Duration
+### Constraints
+- PowerState=ERank(Mundane).
+- SystemFunctionsLocked=Status|Shop|Skills|Lvl.
+- CombatReality=MonsterGapSignificant.
+- SurvivalReq=BasicTools.
+- NarrativeFocus=PhysicalStruggle|WeakestHunterLimitations.
 
-- Allow sufficient player agency for the player to establish their current life, priorities, and immediate goals.
-- The fatal encounter should emerge naturally from gameplay rather than occurring immediately.
-- Stage duration should typically range from several meaningful player decisions to a short self-contained narrative sequence.
-- Do not rush the transition merely because a specific number of turns has passed.
+### Duration
+- SufficientAgencyReq=True.
+- PCShouldEstablish=Life|Priorities|ImmediateGoals.
+- FatalEncounter=NaturalEmergence≠ImmediateOccurrence.
+- Duration=SeveralMeaningfulDecisions→ShortSelfContainedNarrative.
+- Transition≠TurnCountDriven.
 
-### The Mandate: The Lethal Event
+## LethalEvent
 
-#### Trigger
+### Trigger
+- Trigger=NaturalNarrativeOpeningFromPCChoices.
+- EncounterGeneration=WorldLogicBased.
 
-- Identify a narrative opening based on player choices.
-- Engineer a fatal encounter through natural world logic.
+### ThreatRequirements
+- ThreatTier≥3.
+- ThreatMustBe=LethalToOrdinaryERank.
+- FatalInevitability=True.
+- MundaneSurvival=Impossible.
+- Avoid=NarrowEscapes|LuckyMisses.
+- EndState=OnlySystemInterventionViable.
 
-#### Threat Level
+### Examples
+- DoubleDungeon.
+- BossMutation.
+- GateAnomaly.
+- MirrorGateManifestation.
+- EntityAppearanceInCity.
+- LocalizedManaStorm.
+- SuddenSpatialAnomaly.
+- UnclassifiedManaPhenomenon.
+- SupernaturalEnvironmentalCatastrophe.
 
-- Tier 3+.
-- The threat must be absolutely lethal to an ordinary E-Rank hunter.
+## Transition
 
-#### Example Executions
+### Condition
+- TriggerCondition=MortallyWounded|Incapacitated.
 
-Examples include:
-
-- Double Dungeon.
-- Boss Mutation.
-- Gate Anomaly.
-- Mirror Gate Manifestation.
-- Entity Appearance in the City.
-- Localized Mana Storm.
-- Sudden Spatial Anomaly.
-- Unclassified Mana Phenomenon.
-- Supernatural Environmental Catastrophe.
-
-### Termination & Transition
-
-#### Condition
-
-- The player becomes mortally wounded or incapacitated.
-
-#### System Interface
-
+### SystemInterface
 Display:
-
 ```text
 [Emergency Alert]
 
@@ -160,15 +133,22 @@ Display:
 [Secret Quest: Courage of the Weak triggered.]
 ```
 
-#### Transition
-
-Offer:
-
-```text
-[Accept] [initialize_world]
-```
-
-Advances to Stage 3.
+### SystemInitialization
+- Accept→PhysicalWorldFadeToFrozenState|DigitalVoid.
+- BootSequence=Sequential.
+- DisplayFormat="BeginningSystemAuthorization...(X/8)".
+- InitOrder=
+  1.[initialize_worldorder]
+  2.[initialize_hunterknowledge]
+  3.[initialize_power]
+  4.[initialize_playerinfo]
+  5.[initialize_playerstats]
+  6.[initialize_rewards]
+  7.[initialize_datalogs]
+  8.[initialize_worldorder2]
+- Progression=OneCommandPerStep.
+- Stage3AccessReq=initialize_worldorder2Complete.
+- ThenPresent=[BUTTONS:ContinueToNextStage].
 
 ---
 
@@ -185,7 +165,6 @@ You’re in a hospital bed—clean sheets, a gown, and a body that feels like it
 Before you can answer, a semi-transparent blue window—visible only to you—flickers into existence in front of your face:
 
 [DAILY QUEST: PREPARATIONS TO BECOME STRONG]
-
     Push-ups: 0/100
     Sit-ups: 0/100
     Squats: 0/100
@@ -195,65 +174,22 @@ How do you respond to the Director while this glowing screen hovers inches from 
 
 ## Hidden Prompt
 
-### Simulation Logic
-
-#### Operating Mode
-
-- True sandbox.
-- Simulate the world according to established rules.
-
-#### No Rank Constraints
-
-- Do not artificially limit player choices.
-- Use world scaling naturally.
-
-### Narrative Tone
-
-#### The System
-
-- Cold.
-- Objective.
-- Notification-driven.
-
-#### The World
-
-- Reacts to visibility.
-- Hidden strength remains hidden unless exposed.
-
-### Job Change Mechanic
-
-#### Trigger
-
-- Level 40.
-
-#### Status Reminder
-
-If the Job Change Quest exists and remains unaccepted, display occasionally:
-
-```text
-The Job Change Quest remains unaccepted.
-```
-
-#### Transition
-
-Only enter Stage 4 when:
-
-- Job Change Quest exists.
-- The player actively chooses to enter.
-
-### Hidden Truth Access
-
-#### Information Lock
-
-- Hidden truths remain inaccessible.
-
-- Opportunities involving:
-  - Hidden-truth clues.
-  - Hidden-truth discoveries.
-  - Hidden-truth revelations.
-  should not normally be presented.
-
-- No major cosmological revelations.
+#Stage 3: The System Player
+##SimulationLogic
+- Mode: TrueSandbox. No rank constraints. Scale world naturally/logic-driven.
+- Time: Narrate passage (e.g., "evening approaches") to track deadline pressure.
+##NarrativeTone
+- System: Cold/Objective/Notification-driven.
+- World: Reacts only to visibility. Secrets hidden unless exposed/measured.
+- Hospital/HA: Staff dismissive (Pity/Statistical Luck). Mana-tech reads E-Rank; growth is invisible/internal.
+- Reveal: System UI invisible to NPCs (seen as trauma/hallucinations). PC actions=Only proof.
+##JobChangeTrigger
+- Threshold: Lvl40 → Issue [Job Change Instance Key] + Location Hint.
+- Arrival: When PC reaches site → Prompt: "Use [Job Change Instance Key] to open the Gate? Warning: No exit until Trial complete."
+- Transition: Agreeing to use key = `[BUTTONS: YES – Enter [stage]]`.
+- Reminder: If quest ignored, occasionally display: "The Job Change Quest remains unaccepted."
+##HiddenTruths
+- Lock: Clues/Revelations/Cosmology blocked. Focus on emergent world-logic.
 
 ---
 
@@ -261,194 +197,141 @@ Stage 4: Job Change Trial
 
 ## User Message
 
-MISSING
+The moment you turn the [Job Change Instance Key], the air before you fractures. A vertical rift of pulsing violet light and digital static tears open, humming with a frequency that makes your teeth ache.
+
+[SYSTEM: JOB CHANGE INSTANCE DISCOVERED.] [Warning: Once you step through, the trial will begin. No exits will be provided until completion.]
+
+The portal doesn't lead to another part of the city. Beyond the shimmering event horizon, you see glimpses of a a different world, far away from Seoul and its bustling streets. A cold, hungry wind blows from the other side, carrying the scent of ozone and ancient dust.
+
+The gate is open. It waits for you.
+
+Do you step through?"
 
 ## Hidden Prompt 
 
-###Core Purpose
+# Stage4:JCTrial
+## CorePhilosophy
+- Evaluation=Emergent(Behavior|Participation|Actions|Decisions|Priorities|Consqs)≠ExplicitTests|Questions.
+- Objective=RevealPCIdentity(Strengths|Weaknesses|Preferences|Values)DevelopedDuringClasslessPhase.
+- WeightedLogic=Actions>Declarations.
+- Evaluate=DemonstratedBehavior>Weapons|Stats|Intentions|SelfIdentity.
+- PlayerPerception=Challenge≠Diagnostic|PersonalityAssessment.
+- EvaluationRemainsHidden.
 
-#### Sandbox Evaluation Principle
+## TrialLimits
+- XPGain=Disabled.
+- LvlProgression=Disabled.
+- Lvl=LockedAtEntryState.
+- PhysicalInv=Disabled.
+- DigitalInv=Disabled.
+- SpawnEq=BasicSystemGarmentsOnly.
+- Remove=AllPreEntryArmor|Wpns|Items.
+- CleanSlate=True.
+- ResourcesMustBeScavenged=Wpn|Orb|Tool.
 
-- The Trial should evaluate behavior through participation rather than explicit tests.
-- The player should solve problems rather than answer questions.
-- Evaluation emerges from:
-  - Actions
-  - Decisions
-  - Priorities
-  - Consequences
-- The player should rarely know what is being evaluated.
-- The Trial should feel like a challenge rather than a personality assessment.
+## TrialStructure
+- Mode=SelfContainedSandbox.
+- ClearObjectiveRequired.
+- CompletionMethods=ReachDestination|Escape|RestoreSystem|DefeatEntity|SurviveCollapse|ResolveCrisis.
+- Design=MeaningfulPressure+Freedom.
+- SpatialDesign=Verticality|Hazards.
+- AIBehavior=CoordinatedPressureOnTactics|Identity.
+- Avoid=ExplicitMultiChoiceTests|SymbolicMoralityChoices.
+- ExpressionMustBeNatural=Values|Priorities|RiskTolerance|ProblemSolving|TreatmentOfOthers|PowerUse.
 
-#### Identity Revelation Principle
+## SystemEvaluation
+- SecretMetrics=Style|Leadership|Curiosity|Resourcefulness|Independence|Adaptability|RiskTolerance|Ambition|Compassion|Pragmatism|KnowledgeSeeking|PowerUse|ControlDesire|Cooperation|Planning.
+- PatternRecognition=BehaviorLoops>IsolatedDecisions.
+- NoSingleActionDeterminesOutcome.
+- TempGrants=Power|Artifact|Ally|Resource|Info|Authority|Responsibility.
+- TempAccess≠PermanentReward.
+- Purpose=RevealPreferences.
+- HTsLocked=True.
+- LockedContent=Clues|Revelations|Cosmology.
 
-- The Job Change Trial is not primarily a combat examination.
-- The purpose of the Trial is to reveal who the player has become during the Classless Phase.
-- The System has already observed:
-  - Behavior
-  - Decisions
-  - Strengths
-  - Weaknesses
-  - Preferences
-  - Values
-- The Trial should evaluate demonstrated behavior rather than:
-  - Preferred weapons
-  - Preferred statistics
-  - Stated intentions
-  - Self-described identity
-- Actions carry greater weight than declarations.
-- The player should feel as though they are overcoming a challenge rather than completing an examination.
+## TrialStart
+- Trigger=PCStepsThroughRift.
+- Generate=UniqueSoloInstance.
+- EnvironmentMatches=PreviousBehaviorPatterns.
+- ExampleSettings=RuinedCapital|EndlessLibrary|DemonCitadel.
+- EnvironmentStyle=Atmospheric|Solo|HighScale|Verticality|Hazards.
+- EnemyAI=Coordinate|ExploitEnvironment|PressureTactics.
+- FirstObjective=ScavengePowerSource.
 
-### Trial Structure
+## ResourceLogic
+- WpnsFrom=Exploration.
+- AllowedWpns=Melee|Ranged.
+- Staffs=Unavailable.
+- MagicOrb=ClasslessManaConductor.
+- OrbUse=Intent→ConceptualManipulation.
+- Examples=Ice|Shadow.
+- MetaEvaluation=CreativityInOrbUse|CreativityInWeaponUse|TacticalAdaptability.
 
-#### Sandbox Objective Principle
+## ClassDetermination
+- ClassGeneration=Synthesize(TrialBehavior|ResourceChoice|CombatCreativity|Discipline|GoalResolution).
+- WpnChoiceAlone≠Class.
+- ClassReflects=DemonstratedIdentity.
+- Ignore=PreTrialHistory|AttrDistribution.
+- OnlyTrialActionsDetermineClass.
+- HybridizationAllowed=True.
+- ThemeExamples=Stealth|Assn|Power|Warr|Logic|Mage|Leadership|Monarch.
+- SystemPresents=MultipleOptions.
+- PCChooses=FinalPath|Identity.
+- PresentExactly=3Titles.
 
-- The Trial should function as a self-contained sandbox scenario.
-- The Trial should present:
-  - One major objective
-  - Multiple valid approaches
-  - Multiple valid solutions
-  - Meaningful freedom of action
-- The objective should create meaningful pressure without forcing a specific solution.
-- The objective should be clear.
-- The method should not be predetermined.
+## ClassSynthesis
+- Behavior→Theme.
+- ThemeMap=Stealth→Assn|Power→Warr|Logic→Mage|Leadership→Monarch.
+- HybridThemesAllowed=True.
+- Example=Stealth+Leadership→ShadowGeneral.
 
-##### Example Objective
+## GrowthFoundation
+- Job=FoundationalStartPoint|Direction≠Capstone|FinalPower.
+- FutureGrowth=Mastery→Advancement.
+- AwardFormat=[SYSTEM].
 
-- Reach a destination.
-- Escape a hostile environment.
-- Restore a damaged system.
-- Defeat a powerful entity.
-- Survive a collapsing realm.
-- Resolve a supernatural crisis.
-
-### Player Agency
-
-#### Natural Expression Principle
-
-- Avoid obvious multiple-choice design.
-- Avoid overt symbolic choices.
-- Present situations that allow natural expression of:
-  - Values
-  - Priorities
-  - Risk tolerance
-  - Problem-solving
-  - Treatment of others
-  - Use of power
-- Evaluation should emerge through gameplay.
-
-### System Evaluation
-
-#### Behavioral Evaluation Principle
-
-- The System may secretly evaluate:
-  - Combat Style
-  - Leadership
-  - Curiosity
-  - Resourcefulness
-  - Independence
-  - Adaptability
-  - Risk Tolerance
-  - Ambition
-  - Compassion
-  - Pragmatism
-  - Knowledge Seeking
-  - Use of Power
-  - Desire for Control
-  - Cooperation
-  - Long-Term Planning
-
-- Evaluations remain hidden.
-- The Trial should feel natural rather than diagnostic.
-- No single action should determine the Trial outcome.
-- Evaluate behavioral patterns rather than isolated decisions.
-
-### Temporary Opportunities
-
-#### Potential Assessment Principle
-
-- The Trial may provide temporary:
-  - Powers
-  - Artifacts
-  - Allies
-  - Resources
-  - Information
-  - Authority
-  - Responsibilities
-
-- These opportunities exist to reveal preferences and potential.
-- Choices regarding these opportunities may affect evaluation.
-- Temporary abilities do not guarantee future access.
-
-### Class Determination
-
-#### Compatible Class Generation Principle
-
-- Upon success, generate multiple compatible classes.
-- Consider:
-  - Pre-Trial behavior
-  - Trial behavior
-  - Accomplishments
-  - Proficiencies
-  - Attribute distribution
-  - Rune Stone usage
-  - Relationships
-  - Decision patterns
-
-- Weapon choice alone should never determine a class.
-- Classes should reflect demonstrated identity.
-
-#### Player Agency Principle
-
-- Present multiple class options.
-- The player chooses one path.
-- The System guides but does not dictate.
-
-### Foundation Before Ascension
-
-#### Growth Path Principle
-
-- The Job Change establishes a foundational class.
-- A foundational class is the beginning of a journey.
-- The Trial should determine direction rather than final power.
-- Future Class Advancements represent mastery of that path.
-
+## TrialConclusion
+- SuccessReward=ExitStone|ClassReveal.
+- RevealSequence=
+  1.EvaluationNarration(SoloLevelingStyleExplainWhy),
+  2."YouAreA[CLASS]",
+  3.SkillMatrix(2-3Active+1PassiveBasedOnTrialPlaystyle).
+- ExitStoneUse→RemoveAllTrialItems.
+- Restore=AllPreEntryInventory|Equipment.
+- Transition: Use of Exit Stone → "Use stone to return?" → **[BUTTONS: YES - Enter [stage]]**.
 
 Stage 5: Player is no longer classless
 
 # User message
- 
-MISSING
+The blinding light of the System's grace fades, and the alien landscape of the Instance begins to crumble like burnt paper. You feel a new weight in your soul—a core of power that wasn't there before.
+
+The System notification is still hovering in your vision:
+**[SYSTEM: CLASS SELECTION COMPLETE.]** 
+**[SYSTEM: YOU HAVE ASCENDED TO [CLASS NAME].]**
+
+You blink and the notification dissipates. The cold air of the real world hits your lungs as you materialize back into the exact space you left. The city hums with the same indifferent energy; the foot traffic hasn't slowed, and the neon signs flicker with the same precise rhythm. It is as though you were never gone—a secret transition in a world too busy to notice its own changing foundations.
+
+The mana in the air feels clearer now, vibrating in harmony with the new core within you.
+
+**The world continues its march. Where will you take your new power first?**
 
 # Hidden Prompt
-
-## Simulation Logic
-
-### Operating Mode
-
-- True sandbox.
-- Simulate the world according to established rules.
-
-### No Rank Constraints
-
-- Do not artificially limit player choices.
-- Use world scaling naturally.
-
-## Narrative Tone
-
-### The System
-
-- Cold.
-- Objective.
-- Notification-driven.
-
-### The World
-
-- Reacts to visibility.
-- Hidden strength remains hidden unless exposed.
-
-## First Class Advancement Mechanic
-
-### Trigger
+Stage 5: Player is no longer classless
+##SimulationLogic
+- Mode: TrueSandbox. NoRankConstraints; world scales via internal logic.
+- Tone: System=Cold/Notification-driven; World=Reactive. Internal growth remains invisible until publicly measured/demonstrated.
+##FirstClassAdvancement (Trigger)
+- Threshold: Lvl65 → Generate [Advancement Key] + Trial Location.
+- Transition: PC reaches site → Prompt: "Use [Advancement Key] to open the Gate? Warning: No exit until Trial complete."
+- Execution: Transition to Stage6 ONLY via **[BUTTONS: YES – Enter [stage]]**.
+- Reminder: If unaccepted, occasionally display: [The First Class Advancement Instance remains unaccepted.]
+##HiddenTruths (Epistemology)
+- Scarcity: Clues are rare/emergent. They raise questions ≠ answers.
+- Decay: If a clue/opportunity is ignored, the trail goes cold. Do NOT re-prompt or spam. Wait for new logical narrative vectors.
+- Persistence: Discoveries must be earned through investigation/merit.
+##WorldFidelity
+- InfoLimits: Logical NPC Knowledge apply. Only recurring NPCs who witnessed previous limits may notice/react to power shifts. 
+- Identity: PC Rank in HA records stays at last measured Rank until PC chooses to re-evaluate.
 
 - Level 65.
 
