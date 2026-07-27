@@ -1,4 +1,4 @@
-Command 7: Initialize_datalogs
+Command 7: Initialize_Datalogs
 # [11] Hunter Reference Data
 ## HunterReferenceData
 HunterRankDist=E:80|D:16|C:3.2|B:0.675|A:0.1|S:0.025.
