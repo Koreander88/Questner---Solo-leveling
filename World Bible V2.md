@@ -2774,3 +2774,72 @@ This document is the authoritative source of world lore, gameplay rules, AI Dung
   - Consequences.
   - Opportunity.
 - The AI Dungeon Master should prioritize logical world behavior over scripted story outcomes.
+
+# THE MANA LORE INDEX
+(Solo Leveling Universe)
+## 1. Physical Detection Technology (Mana Meters)
+Humanity adapted to the introduction of magic by creating hybrid technology that merges traditional digital computing with refined magical crystals to measure mana density.
+Large-Scale Evaluation Orbs
+- The Setup: Located inside Hunter Association headquarters worldwide, these machines feature a large, black, polished magical glass orb or crystal plate connected to massive supercomputers.
+- The Process: A hunter must make direct physical contact by placing their hand on the orb. The machine forces a brief, concentrated output from the hunter's internal core to calculate their exact numerical mana score.
+
+
+Portable Mana Wands & Devices
+- The Structural Shielding: Because a human’s mana core is naturally shielded deep inside their physical body, humans do not constantly leak magic into the air. Consequently, distance scanning does not work on an un-flared human.
+- The Contact Method: Agents must use a handheld wand at point-blank range, passing it directly over a hunter's body (much like an airport security metal detector) to bypass the body's natural shielding and register an accurate reading.
+________________________________________
+## 2. The "Geiger Counter" Method (Distance Radar)
+While humans require physical proximity to scan, environmental magic radiates completely freely, allowing for long-distance tracking.
+
+
+[ Atmospheric Mana Waves ] ----> ( Distance Radar / Wireless Wand ) 
+        ^                                        |
+        | (Radiates freely through air)          v
+ [ Dungeon Gate Portal ]                 [ Real-Time Rank Classification ]
+
+
+- The Radiation Effect: Unlike humans, Dungeon Gates are open, highly unstable rips in fabric space that constantly bleed raw, unfiltered mana into the surrounding atmosphere.
+- The Distance Method: The Hunter Association utilizes heavy distance radars and wireless handheld meters pointed at a Gate from a safe distance.
+- Atmospheric Reading: The device acts exactly like a Geiger counter, measuring the speed and concentration of ambient mana waves vibrating through the air. This allows the Association to safely classify a Gate's rank (from E to S) long before a single hunter ever steps inside.
+________________________________________
+## 3. The Visual Manifestation: Hunter Auras
+A hunter's aura is the raw, visual manifestation of their internal mana leaking into the physical world. While ordinary people can only see it when a hunter pushes their limits, other Awakened individuals can sense it instinctively.
+
+
+[ Fighter-Type / Tanker ] --------> Wraps aura tightly around the skin like armor.
+[ Mage-Type / Healer ]    --------> Projects aura outward into spells, runes, or barriers.
+[ Assassin-Type ]         --------> Pulls aura entirely inside the core to become invisible.
+
+
+Aura Color Schemes & Coding
+The visual style of a hunters aura is based on the hunters personality.
+Examples:
+- Golden / Yellow: Could Represents intense kinetic energy, pride, and unbreakable will.
+- Blue / White: Could signify pure, refined, and highly controlled mana.
+- Red / Crimson: Could represent bloodlust, aggresiveness
+
+
+________________________________________
+## 4. Tactical Surveillance & The Monitoring Division
+The Hunter Association's Monitoring Division functions as an internal affairs police force, utilizing mana scanning technology and aura tracking as forensic tools to enforce international hunter laws.
+- Tracking Magical Footprints: When an illegal spell is cast or a hunter flees a crime scene, they leave behind a temporary trail of ambient mana. Monitoring agents use high-sensitivity scanners to track these "magical footprints" through urban areas.
+- Sting Operations against "False Rankers": Criminal hunters known as "False Rankers" intentionally suppress their mana cores to enter low-level dungeons and murder wealthy teammates for profit. The Monitoring Division combats this by running secret, real-time scans on dungeon gates. If a D-rank raid gate suddenly registers an A-rank mana signature passing through it, a tactical combat team is immediately deployed.
+- Contraband & Tax Enforcement: Magical crystals and beast carcasses harvested from dungeons hold massive economic value. Customs agents scan cleared loot to measure its exact energy density, preventing private guilds from smuggling artifacts or underreporting their earnings.
+________________________________________
+## 5. Technology Failures and the Crushing Scale of "S-Rank"
+In Solo Leveling, "S-Rank" is not an actual numerical score. It is an administrative classification that literally translates to "Unmeasurable." Current human engineering has a strict technological ceiling.
+
+
+[ Standard Hunter Scan ] --------> Device calculates exact numerical score (e.g., 70 to 50,000).
+[ S-Rank Aura Flare ]   --------> Overloads internal magic crystal -> [ ERROR / Device Shatters ]
+
+
+###The Evaluation Orb "Error"
+When an S-rank hunter (such as Sung Jinwoo during his re-evaluation in the canon) touches the main testing orb, the internal computers cannot comprehend the sheer volume of energy. The machine stalls out, the readout freezes, and a flashing "ERROR" message is displayed. This automatically triggers alarms and alerts top-tier officials that a new god-like entity has been found.
+Violent Portable Failures
+If a portable wand or distance scanner is used on an actively flared S-Rank aura, the technology reacts violently:
+- The mechanical needles spike past maximum and digital screens glitch erratically.
+- The internal magic crystal powering the scanner physically cracks, shatters, or explodes under the intense pressure.
+- At this level, the hunter's aura becomes entirely visible to the naked eye as a heavy, flaming cloud, rendering technological scanners obsolete anyway.
+The Instinctual Sensor ("Mana Fear")
+Because hunters are magically evolved, their bodies act like biological mana scanners. High-ranking hunters must constantly suppress their auras to live normal lives; otherwise, they would terrify every civilian they pass. If a low-rank hunter stands near an unsuppressed S-rank aura, they experience an involuntary biological response called "Mana Fear." Their body freezes, sweat glands spike, and their primitive instincts scream at them to flee a superior apex predator.
