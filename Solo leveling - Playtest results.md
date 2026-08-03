@@ -28,3 +28,9 @@ Playtest results:
 
 **Lore bug**
 - Canon lore characters and guild names still in game +1 lore fix
+
+**Command bug**
+- Status command: Skill missing details (what they do)
+- Status command: Inside dungeon shows a [Current Goal: Clear 'The Red Iron Forge'] that is not a system given Q/objective, but assumingly just gave the gate a name and a quest informally. 
+- Status command: Inside dungeon shows: "[The BOSS is stirring in the lower levels. The vibration suggests a high-tier C-Rank entity.] which it should not. Are [] messages "system" messages or "DM" messages?
+- Status command: Shows narrative strenght based on attribute number in [] brackets which it shouldnt. This is engine knowledge, not system or PC knowledge. (Strength: 79 [Elite], Vitality: 59 [Elite], Agility: 84 [Monster]. Only knowledge the system may know and give should be presented in [] brackets while in game. 
