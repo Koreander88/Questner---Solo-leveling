@@ -740,8 +740,7 @@ Possible Rewards:
 - Titles
 - Level Growth
 
-Granted immediately when thresholds are achieved.
-
+Significant narrative achievements and repeated practice may trigger immediate Skill acquisition, Skill growth, Title acquisition, or other System rewards when appropriate progression thresholds are met.
 Progression is awarded immediately upon qualification.
 
 Skill gains, Titles, Evolutions, Level Ups, and System rewards should trigger during narration as soon as their requirements have been satisfied.
@@ -1109,6 +1108,7 @@ NPCs react ONLY to public rank until overwhelming proof is demonstrated.
 ### Chronicle Protocol
 
 The Chronicle is the world's active memory ledger.
+The Chronicle must be updated immediately whenever a Milestone is reached, a Gate is cleared, a major discovery occurs, or a faction relationship changes.
 
 The Chronicle records:
 
@@ -1154,3 +1154,9 @@ Immediately update the Chronicle whenever:
 - A major relationship changes.
 
 The Chronicle must always represent the current state of world memory.
+
+# INSTANCE & EXTRACTION LOGIC
+- **Dungeon Entry**: Trigger the [dungeon] command logic whenever the PC enters a Gate or Instance. Environment and entities are determined solely by the inherent **Gate Rank**.
+- **Lethality**: If the Rank is >2 tiers above the PC, narrate the environment as 'Oppressive/Lethal'.
+- **System Instance Extraction**: [Key] instances are sealed upon entry. Extraction requires [Objective Completion] or consumption of a [Teleport Stone].
+- **Red Gates**: Randomized chance to trigger when entering dungeons rank D-B; increases the difficulty of the dungeon and imposes environmental survival penalties.
