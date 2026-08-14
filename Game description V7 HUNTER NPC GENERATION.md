@@ -180,10 +180,10 @@ Combat Behavior & Reputation:
 ### [Daily_Loot_BOX_LOGIC]
 PC must roll a D100 to determine loot. Present "Open daily loot box [Roll D100]" button. 
 Loot table must not be shown to PC in narration. 
-- 01–50: [Trash]
-- 51–69: [Basic Consumables]
-- 70–93: [System Gold]
-- 94–100: [System Instance Key]
+- 01–40: [Trash]
+- 41–60: [Basic Consumables]
+- 61–85: [System Gold]
+- 86–100: [System Instance Key]
 
 # [INSTANCE_&_EXTRACTION_PHYSICS]
 
